@@ -9,15 +9,20 @@ const Header = () => {
 
             <div className="header__container">
 
-                <h5>Hello, I'm</h5>
-                <h1>Kishore</h1>
-                <h5 className="text-light">Application Engineer</h5>
-                <CTA/>
-                {/* <HeaderSocials/> */}
-
                 <div className="me">
                     <img src={myIMG}></img>
                 </div>
+
+                <div>
+                    <h5>Hello, I'm</h5>
+                    <h1>Kishore</h1>
+                    <h5 className="text-light">Application Engineer at Newgen Software Technologies</h5>
+                </div>
+
+                <CTA/>
+                {/* <HeaderSocials/> */}
+
+
 
                 <a href="#contacts" className="scroll__down"></a>
 
