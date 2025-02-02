@@ -6,15 +6,15 @@ import myIMG from "../../assets/IMG_9470.png"
 import "../about/About.css"
 const About = () =>{
     return (
-        <section id='about'>
-            <h5>Get To Know</h5>
+        <section >
+            <h5 id='about'>Get To Know</h5>
             <h2>About Me</h2>
 
-            <div className="about__container">
+            <div className="container about__container">
 
                 <div className="about__me">
                     <div className="about__me-image">
-                            <img className="myIMG" src={myIMG}></img>
+                            <img src={myIMG} alt="Me"></img>
                     </div>
                 </div>
 
@@ -29,7 +29,7 @@ const About = () =>{
 
                             <article className="about__card">
                                 <BsBookmarkStar className="about__icon"/>
-                                <h5>Curent GPA</h5>
+                                <h5>Curent CGPA</h5>
                                 <small>8.75</small>
                             </article>
 
@@ -38,18 +38,16 @@ const About = () =>{
                                 <h5>Domain</h5>
                                 <small>
                                     <ul>
-                                        <li>Net Centric</li>
-                                        <li>Mobile Applications</li>
+                                        <li>Java Backend API</li>
                                     </ul>
                                 </small>
                             </article>
                         </div>
                         <p>
-                            I'm a <b>Software Engineering Undergradute</b> at the University of Kelaniya. 
-                            I'm an enthusiastic and driven Software Engineering student seeking a challenging internship opportunity to apply 
-                            and expand my technical skills. 
-                            With a strong academic foundation in software engineering and hands-on experience in various programming languages,
-                            I am eager to contribute to innovative projects and learn from experienced professionals in the industry. I am a quick learner who is always ready to face challenges.  
+                            I'm a <b>Electronics and Engineering Graduate</b> from Velammal College of Engineering and Technology.
+                            I am an enthusiastic individual with a passion for learning new technologies and tackling challenges in the software industry.
+                            Currently, I have been working in the Java domain at a client location for the past year, specializing in banking APIs and Fintech technologies.
+                            A quick learner, I thrive in dynamic environments and am always eager to take on new challenges.  
                         </p>
                      </div>
                  </div>

@@ -1,6 +1,6 @@
 import React from "react"
 import { BsGithub, BsLinkedin } from "react-icons/bs"
-
+import "../../components/footer/Footer.css"
 const Footer = () =>{
     return(
         <footer>
@@ -13,8 +13,8 @@ const Footer = () =>{
             </ul>
 
             <div className="footer__socials">
-                <a href=""><BsLinkedin/></a>
-                <a href=""><BsGithub/></a>
+                <a href="https://www.linkedin.com/in/arkishorelal/" target="_blank" className="socialbtn"><BsLinkedin/></a>
+                <a href="" className="socialbtn"><BsGithub/></a>
             </div>
 
             <div className="footer__copyright">

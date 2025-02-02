@@ -1,5 +1,5 @@
   import React from 'react'
-  //css
+  import "../../components/experience/Experience.css"
   import { BsFillPatchCheckFill } from 'react-icons/bs'
 
   const Experience = () =>{
@@ -15,9 +15,9 @@
             <div className="experience__frontend">
               <h3>Frontend Development</h3>
             
-            <div className="experience__details">
+            <div className="experience__content">
 
-            <article >
+            <article className='experience__details'>
                 <BsFillPatchCheckFill className="experience__details-icon"/>
                 <div>
                   <h4>HTML</h4>
@@ -50,7 +50,7 @@
             </article>
               </div>
             </div>
-        </div>
+        
 
         <div className='experience__backend'>
             <h3>Backend Development</h3>
@@ -65,6 +65,7 @@
               </article>
 
             </div>
+         </div>
         </div>
       </section>
     )

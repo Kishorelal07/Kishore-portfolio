@@ -1,9 +1,18 @@
 header{
-    height: 100vh;
-    padding-top: 5rem;
+    height: 108vh;
+    padding-top: 10rem;
     overflow: hidden;
 }
+.text-light{
+    font-size: 18px;
+}
+.text-run{
+    font-size: 20px;
+    margin-top: 15px;
+    font-style:inherit;
+    color: var(--color-primary);
 
+}
 .header__container{
 
     text-align: center;
@@ -17,6 +26,7 @@ header{
     gap : 1.2rem;
     justify-content: center;
 }
+
 /*.header__att{*/
 /*    margin-top: 20rem;*/
 /*}*/
@@ -25,8 +35,49 @@ header{
     height: 20rem;
     position : absolute;
     left : calc(50% - 11rem);
-    margin-top:7rem;
+    margin-top:10rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     /*padding : 5rem 1.5rem 1, 5rem 1.5rem;*/
+}
+
+.scroll__down{
+
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* Media queries for medium devices(Tablets) */
+
+@media screen and (max-width: 1024px) {
+
+    header{
+
+        height: 20h;
+    }
+
+}
+
+/* Media queries for small devices(Mobiles) */
+
+@media screen and (max-width: 600px) {
+
+    header{
+
+        height: 100vh;
+    }
+
+    .header__socials, .scroll__down{
+
+        display: none;
+    }
+
+    .me > img{
+
+        margin-top: 2.5rem;
+    }
 }
