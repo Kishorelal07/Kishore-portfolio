@@ -6,6 +6,7 @@ import Header from "./src/components/header/Header"
 import Contacts from "./src/components/contact/Contacts"
 import Footer from "./src/components/footer/Footer"
 import Nav from "./src/components/nav/Nav"
+import CurrentExp from "./src/components/workExperience/CurrentExp"
 // const heading = React.createElement("h1",{},"Hello World!")
 
 // const root = ReactDOM.createRoot(document.getElementById("root"))
@@ -19,6 +20,7 @@ const App = () => {
         <Header/>
         <Nav/>
         <About/>
+        <CurrentExp/>
         <Experience/>
         {/* <Myprojects/> */}
         <Contacts/>

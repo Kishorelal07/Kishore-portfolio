@@ -7,7 +7,7 @@
       <section id="experience">
 
         <h5>The skills I have</h5>  
-        <h2>My Experience</h2>
+        <h2>My Skills</h2>
 
         <div className="container experience__container">
 
