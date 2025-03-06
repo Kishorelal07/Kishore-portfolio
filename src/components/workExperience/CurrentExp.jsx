@@ -12,9 +12,9 @@ const CurrentExp = () => {
                 <div className="timeline">
 
                     <div className="timeline-item">
-                            <div className="dot"></div>
+                            <div className=""></div>
                             <h4>Newgen Software Technologies</h4>
-                            <p>dsfffffffffffff</p>
+                            
                     </div>
 
                     <div className="line"></div>
