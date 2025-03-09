@@ -3,30 +3,31 @@ import "../../components/workExperience/CurrentExp.css"
 
 const CurrentExp = () => {
     return (
-        <section id="currentExp">
-            <h5>Working Experience</h5>
-            <h2>Current Working Experience</h2>
+        <div className="container-exp">
+            <h2>📌 My Journey</h2>
 
-            <div className="experience__container_e">
-               
-                <div className="timeline">
+            <div className="timeline">
 
-                    <div className="timeline-item">
-                            <div className=""></div>
-                            <h4>Newgen Software Technologies</h4>
-                            
-                    </div>
+                <div className="timeline-item">
+                    <h5>💼 Work Experience</h5>
+                    <p className="currP">Java Backend Developer at CUB (City Union Bank)</p>
+                    <p className="date">2024 - Present</p>
+                </div>
 
-                    <div className="line"></div>
+                <div className="timeline-item">
+                    <h5>🎓 College</h5>
+                    <p className="currP">Velammal College of Engineering and Technology</p>
+                    <p className="date">2024</p>
+                </div>
 
-                    <div className="timeline-item">
-                            <div className="dot"></div>
-                            <h4>Velammal College of Engineering and Technology</h4>
-                    </div>
+                <div className="timeline-item">
+                    <h5>🏫 School</h5>
+                    <p className="currP">Velammal Matriculation Higher Secondary School</p>
+                    <p className="date">2018</p>
                 </div>
 
             </div>
-        </section>
+        </div>
 
     )
 }
