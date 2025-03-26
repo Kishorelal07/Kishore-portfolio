@@ -1,49 +1,133 @@
-/* Timeline */
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h5 {
+    color: var(--color-light);
+    font-size: 1.2rem;
+}
+
+h2 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Timeline container */
+.container-exp {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 .timeline {
     position: relative;
-    border-left: 4px solid #3498db;
-    padding-left: 20px;
+    padding: 1rem;
 }
 
-.timeline-item {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.timeline-item::before {
+/* Vertical line */
+.timeline::before {
     content: '';
     position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-primary);
+    transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+    background-color: var(--color-bg-variant);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Left & Right alignment */
+.timeline-item:nth-child(odd) {
+    left: -10%;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 10%;
+    text-align: left;
+}
+
+/* Dots on the line */
+.timeline-item::before {
+    content: '●';
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 15%;
     left: -12px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    background-color: #3498db;
+    background-color: var(--color-bg);
+    padding: 0.2rem;
     border-radius: 50%;
 }
 
-.timeline-item h3 {
-    font-size: 18px;
-    color: #222;
-    margin-bottom: 5px;
+/* Dates and Content */
+.date {
+    font-size: 0.9rem;
+    color: var(--color-light);
 }
 
-.timeline-item p {
-    color: #555;
-    font-size: 14px;
+.currP {
+    font-size: 1rem;
+    color: var(--color-white);
 }
 
-.timeline-item .date {
-    font-size: 12px;
-    color: #888;
+/* ========= Glowing Launchpad at Bottom ========= */
+.rocket-launchpad {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    bottom: -10%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--color-primary);
+    animation: glow 1.5s infinite alternate;
 }
-.container-exp{
-    /*padding-left: 500px;*/
-    border:1px solid transparent;
-    border-radius: 1rem;
-    padding:.6rem;
-    text-align: center;
-    transition: var(--transition);
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px var(--color-primary);
+    }
+    to {
+        box-shadow: 0 0 20px var(--color-primary), 0 0 30px var(--color-primary);
+    }
 }
-.currP{
-    font-size: 90rem;
+
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0;
+        text-align: left;
+    }
+
+    .timeline-item::before {
+        left: -20px;
+    }
 }

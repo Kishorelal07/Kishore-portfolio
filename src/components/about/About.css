@@ -89,27 +89,47 @@
 
 /* Media queries for small devices(Mobiles) */
 
+/* Media queries for small devices (Mobiles) */
 @media screen and (max-width: 600px) {
-
-    .about__me{
-
-        width: 65%;
-        margin: 0 auto 3rem;
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
-    .about__cards{
+    .about__me {
+        width: 90%; /* Increase width for better alignment */
+        margin: 0 auto 2rem;
+    }
 
-        grid-template-columns: 1fr 1fr;
+    .about__me-image {
+        transform: rotate(-10deg);
+    }
+
+    .about__me-image:hover {
+        transform: rotate(0);
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    .about__content{
-
-        text-align: center;
+    .about__card {
+        padding: 1rem;
     }
 
-    .about__content p{
+    .about__card:hover {
+        background: transparent;
+        border-color: var(--color-primary);
+        cursor: pointer;
+    }
 
+    .about__content {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .about__content p {
         margin: 1.5rem 0;
     }
 }

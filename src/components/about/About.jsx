@@ -8,13 +8,13 @@ const About = () =>{
     return (
         <section >
             <h5 id='about'>Get To Know</h5>
-            <h2>About Me</h2>
+            <h2>about Me</h2>
 
             <div className="container about__container">
 
                 <div className="about__me">
                     <div className="about__me-image">
-                            <img src={myIMG} alt="Me"></img>
+                            {/* <img src={myIMG} alt="Me"></img> */}
                     </div>
                 </div>
 
