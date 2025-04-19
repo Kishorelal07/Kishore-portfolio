@@ -2,7 +2,7 @@ import React from "react";
 import { BsBookmarkStar } from "react-icons/bs";
 import { GiGraduateCap } from "react-icons/gi";
 import { TfiWorld } from "react-icons/tfi";
-import myIMG from "../../assets/Kishore.png"
+import myIMG from "../../assets/Kishore_1.png"
 import "../about/About.css"
 const About = () =>{
     return (
