@@ -1,5 +1,5 @@
 header{
-    height: 130vh;
+    /* height: 150vh; */
     padding-top: 10rem;
     overflow: hidden;
 }
@@ -35,10 +35,10 @@ header{
     height: 20rem;
     position : absolute;
     left : calc(50% - 11rem);
-    margin-top:10rem;
+    margin-top:12rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    /*padding : 5rem 1.5rem 1, 5rem 1.5rem;*/
+    padding : 5rem 1.5rem 1, 5rem 1.5rem;
 }
 
 .scroll__down{

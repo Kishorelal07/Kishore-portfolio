@@ -2,7 +2,7 @@ import React from "react";
 import { BsBookmarkStar } from "react-icons/bs";
 import { GiGraduateCap } from "react-icons/gi";
 import { TfiWorld } from "react-icons/tfi";
-import myIMG from "../../assets/IMG_9470.png"
+import myIMG from "../../assets/Kishore.png"
 import "../about/About.css"
 const About = () =>{
     return (
@@ -14,7 +14,7 @@ const About = () =>{
 
                 <div className="about__me">
                     <div className="about__me-image">
-                            {/* <img src={myIMG} alt="Me"></img> */}
+                            <img src={myIMG} alt="Me"></img>
                     </div>
                 </div>
 

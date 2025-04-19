@@ -2,13 +2,12 @@
   "name": "portfolio-react",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://kishorelal07.github.io/Kishore-portfolio/",
   "dependencies": {
     "js-tokens": "^4.0.0",
     "loose-envify": "^1.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.4.0",
+    "react-icons": "^5.5.0",
     "react-simple-typewriter": "^5.0.1",
     "scheduler": "^0.23.2"
   },

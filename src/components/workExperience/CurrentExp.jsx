@@ -3,14 +3,14 @@ import "../../components/workExperience/CurrentExp.css";
 
 const CurrentExp = () => {
     return (
-        <section>
+        <section id='currExp'>
             <h5>My Degree to Job</h5>
             <h2 id='about'>My Journey</h2>
             <div className="container-exp">
                 <div className="timeline">
                     <div className="timeline-item">
                         <h5>💼 Work Experience</h5>
-                        <p className="currP">Java Backend Developer at Newgen Software Techonologies</p>
+                        <p className="currP">Java Backend Developer at Newgen Software Technologies</p>
                         <p className="date">2024 - Present</p>
                     </div>
 
